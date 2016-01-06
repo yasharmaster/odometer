@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:padding="0sp"
+    android:background="#c0d2d9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wall2"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:text="0.00"
+        android:id="@+id/distance"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:textSize="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/startBtn"
+        android:layout_toStartOf="@+id/startBtn"
+        android:textColor="#001f3f"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/startBtn"
+
+        android:onClick="startRun"
+        android:background="#3D9970"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/stopBtn"
+        android:layout_alignStart="@+id/stopBtn" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stopBtn"
+
+        android:onClick="stopRun"
+        android:background="#3D9970"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:layout_below="@+id/lockBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_lock"
+        android:id="@+id/lockBtn"
+        android:onClick="lockRun"
+        android:layout_alignTop="@+id/startBtn"
+        android:layout_alignLeft="@+id/distance"
+        android:layout_alignStart="@+id/distance"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="kms"
+        android:id="@+id/textView"
+        android:textSize="50dp"
+        android:textColor="#001f3f"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignTop="@+id/distance"
+        android:layout_alignLeft="@+id/startBtn"
+        android:layout_alignStart="@+id/startBtn" />
+
+
+</RelativeLayout>

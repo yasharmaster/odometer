@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:padding="25sp"
+    tools:context="com.example.android.odometer.AboutActivity"
+    android:background="#001f3f">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This application is developed by Yash Sharma, Shubham Swarnkar and Vishal Chauhan of Indian Institute of Information Technology, Allahabad as a project for Operating Systems course."
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+</RelativeLayout>
